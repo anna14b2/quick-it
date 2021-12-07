@@ -75,11 +75,25 @@ header {
   color: var(--color-primary);
 }
 
-/* BUSINESS PAGE */
+/* BOX */
+.box {
+  margin-bottom: 30px;
+}
+
+.box-inner {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+/*  */
+
+/* BUTTONS */
 .btn {
   cursor: pointer;
   display: inline-block;
   font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
   color: #fff;
   border: none;
   border-radius: 25px;
@@ -92,7 +106,30 @@ header {
     0 0 2px rgb(0 0 0 / 7%);
 }
 
+/* BACKGROUNDS */
+.bg-primary {
+  background-color: var(--color-primary);
+  color: #fff;
+}
+.bg-light {
+  background-color: var(--color-light);
+  color: #000;
+}
+
+/* TEXT STYLING */
+.text-center {
+  text-align: center;
+}
+
 /* MEDIA QUERIES */
+@media screen and (min-width: 1440px) {
+  .box {
+    max-width: 1440px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
 @media screen and (max-width: 1025px) {
   .navbar {
     width: 100%;
