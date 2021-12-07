@@ -36,7 +36,8 @@ p {
 }
 
 img {
-  max-width: 100%;
+  width: 100%;
+  max-width: 500px;
 }
 
 /* NAVBAR */
@@ -54,6 +55,7 @@ header {
     0 0 2px rgb(0 0 0 / 7%);
   border: 2px solid var(--color-primary);
   border-radius: 50px;
+  padding: 10px;
 }
 
 .navbar ul {
@@ -68,7 +70,7 @@ header {
 
 .logo {
   width: 100px;
-  height: 100px;
+  height: auto;
 }
 
 .selected {
@@ -77,15 +79,28 @@ header {
 
 /* BOX */
 .box {
-  margin-bottom: 30px;
+  margin-top: 30px;
 }
-
-.box-inner {
-  max-width: 400px;
+.box-a img,
+.box-text {
+  max-width: 500px;
   margin: 0 auto;
+  justify-self: center;
+  /* padding: 20px 0; */
 }
 
-/*  */
+.box-text p,
+.box-text .btn {
+  margin-top: 20px;
+}
+/* GRID STYLES */
+.grid-col-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  align-items: center;
+  justify-content: space-between;
+}
 
 /* BUTTONS */
 .btn {
@@ -97,7 +112,7 @@ header {
   color: #fff;
   border: none;
   border-radius: 25px;
-  padding: 7px 16px;
+  padding: 9px 20px;
   line-height: 1.2;
   text-align: center;
   text-decoration: none;
@@ -123,6 +138,10 @@ header {
 
 /* MEDIA QUERIES */
 @media screen and (min-width: 1440px) {
+  .box-a img {
+    max-width: 600px;
+  }
+
   .box {
     max-width: 1440px;
     margin-right: auto;
