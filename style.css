@@ -44,6 +44,10 @@ section {
   margin-top: 30px;
 }
 
+i {
+  color: #fff;
+}
+
 /* NAVBAR */
 header {
   width: 100%;
@@ -111,6 +115,10 @@ header {
   margin-top: 1rem;
 }
 
+.box-e {
+  margin-bottom: 30px;
+}
+
 /* GRID STYLES */
 .grid-col-2 {
   display: grid;
@@ -150,6 +158,17 @@ header {
 .grid-reversed :first-child {
   order: 2;
 }
+
+footer .grid-col-3 * {
+  place-self: center;
+}
+
+.flex {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  margin-top: 10px;
+}
 /* BUTTONS */
 .btn {
   cursor: pointer;
@@ -188,13 +207,28 @@ header {
   font-weight: lighter;
 }
 
+/* MARGINS AND PADDINGS */
+.m-right {
+  margin-right: 1rem;
+}
+
+/* FOOTER */
+footer {
+  padding: 5px;
+}
+footer span:first-of-type {
+  color: var(--color-secondary);
+  display: block;
+}
+
 /* MEDIA QUERIES */
 @media screen and (min-width: 1440px) {
   .box-a img {
     max-width: 600px;
   }
 
-  .box-a {
+  .box-a,
+  .box-e {
     max-width: 1440px;
     margin-right: auto;
     margin-left: auto;
