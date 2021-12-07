@@ -40,6 +40,10 @@ img {
   max-width: 500px;
 }
 
+section {
+  margin-top: 30px;
+}
+
 /* NAVBAR */
 header {
   width: 100%;
@@ -78,9 +82,7 @@ header {
 }
 
 /* BOX */
-.box {
-  margin-top: 30px;
-}
+
 .box-a img,
 .box-text {
   max-width: 500px;
@@ -93,6 +95,20 @@ header {
 .box-text .btn {
   margin-top: 20px;
 }
+
+.box-b {
+  padding: 2rem;
+}
+
+.box-b h2 {
+  grid-column: 1/-1;
+  font-size: 2rem;
+  margin-left: 10%;
+}
+
+.box-b p {
+  margin-top: 1rem;
+}
 /* GRID STYLES */
 .grid-col-2 {
   display: grid;
@@ -100,6 +116,28 @@ header {
   gap: 1.5rem;
   align-items: center;
   justify-content: space-between;
+}
+
+.grid-col-2b {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.grid-col-3 {
+  margin: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2rem;
+  row-gap: 3rem;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.grid-col-3 img {
+  max-width: 100px;
+  justify-self: center;
 }
 
 /* BUTTONS */
@@ -136,16 +174,24 @@ header {
   text-align: center;
 }
 
+.text-light {
+  font-weight: lighter;
+}
+
 /* MEDIA QUERIES */
 @media screen and (min-width: 1440px) {
   .box-a img {
     max-width: 600px;
   }
 
-  .box {
+  .box-a {
     max-width: 1440px;
     margin-right: auto;
     margin-left: auto;
+  }
+  .grid-col-3 {
+    margin: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
   }
 }
 
