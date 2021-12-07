@@ -75,6 +75,23 @@ header {
   color: var(--color-primary);
 }
 
+/* BUSINESS PAGE */
+.btn {
+  cursor: pointer;
+  display: inline-block;
+  font-weight: bold;
+  color: #fff;
+  border: none;
+  border-radius: 25px;
+  padding: 7px 16px;
+  line-height: 1.2;
+  text-align: center;
+  text-decoration: none;
+  background-color: var(--color-primary);
+  box-shadow: 0 1px 3px rgb(0 0 0 / 10%), 0 2px 2px rgb(0 0 0 / 6%),
+    0 0 2px rgb(0 0 0 / 7%);
+}
+
 /* MEDIA QUERIES */
 @media screen and (max-width: 1025px) {
   .navbar {
