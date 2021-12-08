@@ -340,7 +340,9 @@ span:first-of-type {
   .navbar ul {
     display: none;
   }
-  .grid-col-2 {
+  .grid-col-2,
+  .grid-col-2b,
+  .grid-col-3 {
     grid-template-columns: 1fr;
   }
 
