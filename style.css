@@ -67,6 +67,11 @@ textarea {
   width: 300px;
 }
 
+input:hover,
+textarea:hover {
+  border: 2px solid var(--color-secondary);
+}
+
 article.box-text section p {
   margin-top: 10px;
   margin-bottom: 30px;
@@ -98,7 +103,7 @@ header {
 }
 
 .navbar a {
-  margin: 0 2rem;
+  margin-right: 2rem;
 }
 
 .navbar a:hover {
@@ -222,8 +227,16 @@ footer .grid-col-3 * {
     0 0 2px rgb(0 0 0 / 7%);
 }
 
+.btn:hover {
+  background-color: var(--color-secondary);
+}
+
 input.btn {
   padding: 6px 15px;
+}
+
+input.btn:hover {
+  outline: 1.5px solid #fff;
 }
 
 /* BACKGROUNDS */
