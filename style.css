@@ -157,6 +157,10 @@ header {
   margin-top: 1rem;
 }
 
+.box-c span {
+  font-size: 2rem;
+}
+
 .box-e {
   margin-left: 2rem;
   margin-bottom: 30px;
@@ -371,15 +375,12 @@ span:first-of-type {
 
 /* MEDIA QUERIES */
 @media screen and (min-width: 1440px) {
-  /* .navbar a {
-    margin: 0 3.5rem;
-  } */
-
   .box-a img {
     max-width: 600px;
   }
   .navbar,
   .box-a,
+  .box-c,
   .box-e,
   main.bg-primary {
     max-width: 1440px;
@@ -402,6 +403,11 @@ span:first-of-type {
   .burger {
     display: block;
   }
+
+  .logo {
+    padding-left: 2rem;
+  }
+
   .navbar {
     border: none;
     box-shadow: none;
