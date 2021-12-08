@@ -258,6 +258,18 @@ span:first-of-type {
   display: block;
 }
 
+/* BURGER MENU ICON */
+.burger {
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  position: relative;
+  background: none;
+  border: none;
+  z-index: 10;
+  transition: all 0.25s;
+}
+
 /* MEDIA QUERIES */
 @media screen and (min-width: 1440px) {
   .box-a img {
