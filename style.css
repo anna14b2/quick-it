@@ -270,6 +270,19 @@ span:first-of-type {
   transition: all 0.25s;
 }
 
+.burger-top,
+.burger-middle,
+.burger-bottom {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 24px;
+  height: 2px;
+  background-color: #000;
+  transform: rotate(0);
+  transition: all 0.5s;
+}
+
 /* MEDIA QUERIES */
 @media screen and (min-width: 1440px) {
   .box-a img {
