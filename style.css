@@ -30,6 +30,10 @@ ul {
   list-style: none;
 }
 
+h1 {
+  font-size: 1.5rem;
+}
+
 p {
   margin: 5px 0;
   line-height: 1.7;
@@ -40,7 +44,8 @@ img {
   max-width: 500px;
 }
 
-section {
+section,
+main.bg-primary {
   margin-top: 30px;
 }
 
@@ -48,6 +53,19 @@ i {
   color: #fff;
 }
 
+input:not(input.btn),
+textarea {
+  background-color: #e0edec;
+  border-radius: 10px;
+  padding: 6px 10px;
+  margin-bottom: 10px;
+  width: 300px;
+}
+
+article.box-text section p {
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
 /* NAVBAR */
 header {
   width: 100%;
@@ -100,6 +118,10 @@ header {
   margin-top: 20px;
 }
 
+.box-text input.btn {
+  margin-top: 0;
+}
+
 .box-b,
 .box-d {
   padding: 2rem;
@@ -126,6 +148,10 @@ header {
   gap: 1.5rem;
   align-items: center;
   justify-content: space-between;
+}
+
+article.grid-col-2 {
+  gap: 5rem;
 }
 
 .grid-col-2b {
@@ -174,8 +200,9 @@ footer .grid-col-3 * {
   cursor: pointer;
   display: inline-block;
   font-weight: bold;
+  font-size: 1.2rem;
   text-transform: uppercase;
-  letter-spacing: 1.5px;
+  letter-spacing: 1.3px;
   color: #fff;
   border: none;
   border-radius: 25px;
@@ -188,11 +215,21 @@ footer .grid-col-3 * {
     0 0 2px rgb(0 0 0 / 7%);
 }
 
+input.btn {
+  padding: 6px 15px;
+  margin-bottom: 30px;
+}
+
 /* BACKGROUNDS */
 .bg-primary {
   background-color: var(--color-primary);
   color: #fff;
 }
+
+.bg-secondary {
+  background-color: var(--color-secondary);
+}
+
 .bg-light {
   background-color: var(--color-light);
   color: #000;
@@ -216,7 +253,7 @@ footer .grid-col-3 * {
 footer {
   padding: 5px;
 }
-footer span:first-of-type {
+span:first-of-type {
   color: var(--color-secondary);
   display: block;
 }
@@ -226,9 +263,10 @@ footer span:first-of-type {
   .box-a img {
     max-width: 600px;
   }
-
+  .navbar,
   .box-a,
-  .box-e {
+  .box-e,
+  main.bg-primary {
     max-width: 1440px;
     margin-right: auto;
     margin-left: auto;
@@ -244,3 +282,4 @@ footer span:first-of-type {
     width: 100%;
   }
 }
+
