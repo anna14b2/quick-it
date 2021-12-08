@@ -67,6 +67,17 @@ textarea {
   width: 300px;
 }
 
+input:focus,
+textarea:focus {
+  outline: 1.5px solid var(--color-secondary);
+  border: none;
+}
+
+input:hover,
+textarea:hover {
+  border: 2px solid var(--color-secondary);
+}
+
 article.box-text section p {
   margin-top: 10px;
   margin-bottom: 30px;
@@ -90,15 +101,17 @@ header {
   padding: 10px;
 }
 
-.navbar,
-.navbar ul {
+.navbar {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.navbar a {
-  margin-right: 2rem;
+.navbar ul {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
 }
 
 .navbar a:hover {
@@ -222,8 +235,16 @@ footer .grid-col-3 * {
     0 0 2px rgb(0 0 0 / 7%);
 }
 
+.btn:hover {
+  background-color: var(--color-secondary);
+}
+
 input.btn {
   padding: 6px 15px;
+}
+
+input.btn:hover {
+  outline: 2px solid #fff;
 }
 
 /* BACKGROUNDS */
@@ -350,9 +371,9 @@ span:first-of-type {
 
 /* MEDIA QUERIES */
 @media screen and (min-width: 1440px) {
-  .navbar a {
+  /* .navbar a {
     margin: 0 3.5rem;
-  }
+  } */
 
   .box-a img {
     max-width: 600px;
@@ -374,10 +395,6 @@ span:first-of-type {
 @media screen and (max-width: 1100px) {
   .navbar {
     width: 100%;
-  }
-
-  .navbar a {
-    margin: 0 1rem;
   }
 }
 
