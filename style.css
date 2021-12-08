@@ -67,6 +67,12 @@ textarea {
   width: 300px;
 }
 
+input:focus,
+textarea:focus {
+  outline: 1.5px solid var(--color-secondary);
+  border: none;
+}
+
 input:hover,
 textarea:hover {
   border: 2px solid var(--color-secondary);
@@ -236,7 +242,7 @@ input.btn {
 }
 
 input.btn:hover {
-  outline: 1.5px solid #fff;
+  outline: 2px solid #fff;
 }
 
 /* BACKGROUNDS */
