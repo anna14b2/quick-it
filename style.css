@@ -321,6 +321,7 @@ span:first-of-type {
   padding: 30px;
   box-shadow: inset 0 4px 3px -3px rgb(0 0 0 / 10%),
     inset 0 4px 2px -2px rgb(0 0 0 / 7%);
+  transition: all 0.3s;
 }
 
 .mobile-menu ul a {
@@ -337,6 +338,14 @@ span:first-of-type {
 
 .mobile-menu div:last-child {
   margin-top: 30px;
+}
+
+.hidden {
+  transform: translateX(100%);
+}
+
+.no-scroll {
+  overflow: hidden;
 }
 
 /* MEDIA QUERIES */
