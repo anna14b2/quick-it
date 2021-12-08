@@ -31,7 +31,7 @@ ul {
 }
 
 h1 {
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 
 p {
@@ -145,6 +145,11 @@ header {
 
 .box-text input.btn {
   margin-top: 0;
+}
+
+.box-a em {
+  color: var(--color-primary);
+  font-style: normal;
 }
 
 .box-b h2 {
