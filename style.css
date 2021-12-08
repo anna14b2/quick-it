@@ -47,6 +47,7 @@ img {
 section,
 main.bg-primary {
   margin-top: 30px;
+  padding-bottom: 30px;
 }
 
 i {
@@ -106,6 +107,7 @@ header {
 /* BOX */
 
 .box-a img,
+.box-e img,
 .box-text {
   max-width: 500px;
   margin: 0 auto;
@@ -217,7 +219,6 @@ footer .grid-col-3 * {
 
 input.btn {
   padding: 6px 15px;
-  margin-bottom: 30px;
 }
 
 /* BACKGROUNDS */
@@ -283,3 +284,17 @@ span:first-of-type {
   }
 }
 
+@media screen and (max-width: 760px) {
+  .grid-col-2 {
+    grid-template-columns: 1fr;
+  }
+
+  article.grid-col-2 {
+    gap: 0;
+  }
+  article.box-text {
+    max-width: 300px;
+    margin: 0 auto;
+    justify-self: center;
+  }
+}
