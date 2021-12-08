@@ -289,6 +289,14 @@ span:first-of-type {
   transition: all 0.5s;
 }
 
+.burger-middle {
+  transform: translateY(7px);
+}
+
+.burger-bottom {
+  transform: translateY(14px);
+}
+
 /* MEDIA QUERIES */
 @media screen and (min-width: 1440px) {
   .navbar a {
@@ -326,6 +334,7 @@ span:first-of-type {
   .navbar {
     border: none;
     box-shadow: none;
+    justify-content: space-between;
   }
 
   .navbar ul {
