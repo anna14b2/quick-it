@@ -297,6 +297,18 @@ span:first-of-type {
   transform: translateY(14px);
 }
 
+.open .burger-top {
+  transform: rotate(45deg) translateY(6px) translateX(6px);
+}
+
+.open .burger-middle {
+  display: none;
+}
+
+.open .burger-bottom {
+  transform: rotate(-45deg) translateY(6px) translateX(-6px);
+}
+
 /* MEDIA QUERIES */
 @media screen and (min-width: 1440px) {
   .navbar a {
