@@ -67,6 +67,12 @@ textarea {
   width: 300px;
 }
 
+input[type="text"],
+input[type="text"] {
+  border: 0;
+  border-bottom: 1px solid var(--color-dark);
+}
+
 input:focus,
 textarea:focus {
   outline: 1.5px solid var(--color-secondary);
@@ -264,9 +270,27 @@ input.btn:hover {
 }
 
 /* BACKGROUNDS */
+.container {
+  width: 100%;
+  position: relative;
+}
+
 .bg-primary {
   background-color: var(--color-primary);
   color: #fff;
+}
+
+.container::before,
+.container::after {
+  content: "";
+  position: absolute;
+  height: 100px;
+  bottom: -80px;
+  right: 0;
+  left: 0;
+  z-index: -10;
+  background-color: var(--color-secondary);
+  transform: skewY(-3deg);
 }
 
 .bg-secondary {
