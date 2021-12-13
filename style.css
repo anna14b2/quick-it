@@ -487,9 +487,20 @@ span:first-of-type {
   .navbar {
     width: 100%;
   }
+
+  .slide img {
+    max-width: 200px;
+  }
 }
 
 @media screen and (max-width: 760px) {
+  p {
+    font-size: 14px;
+  }
+
+  section {
+    padding: 20px;
+  }
   .burger {
     display: block;
   }
@@ -514,7 +525,7 @@ span:first-of-type {
   }
 
   .slider-container {
-    height: 900px;
+    height: 700px;
   }
 
   .box-a.grid-col-2 img:first-child {
