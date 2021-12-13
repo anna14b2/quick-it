@@ -21,37 +21,6 @@ const stepB = document.getElementById("stepB");
 const stepC = document.getElementById("stepC");
 const stepD = document.getElementById("stepD");
 
-// function getStepA() {
-//   stepA.classList.remove("hideme");
-//   stepA.classList.add("z-index");
-//   stepB.classList.add("hideme");
-//   step2.classList.remove("selected");
-//   step1.classList.add("selected");
-// }
-
-// step1.addEventListener("click", getStepA);
-
-// function getStepB() {
-//   stepB.classList.remove("hideme");
-//   stepB.classList.add("z-index");
-//   stepA.classList.add("hideme");
-//   step1.classList.remove("selected");
-//   step2.classList.add("selected");
-// }
-
-// step2.addEventListener("click", getStepB);
-
-// function getStepC() {
-//   stepC.classList.remove("hideme");
-//   stepC.classList.add("z-index");
-//   stepA.classList.add("hideme");
-//   stepB.classList.add("hideme");
-//   step1.classList.remove("selected");
-//   step2.classList.remove("selected");
-//   step3.classList.add("selected");
-// }
-
-// step3.addEventListener("click", getStepC);
 
 function getStepA() {
   stepA.classList.remove("hideme");
