@@ -200,6 +200,11 @@ header {
   font-size: 2rem;
 }
 
+.box-c img {
+  max-width: 300px;
+  margin: 2rem auto;
+}
+
 .box-e {
   margin-left: 2rem;
   margin-bottom: 30px;
@@ -265,31 +270,27 @@ footer .grid-col-3 * {
 /* SLIDER */
 .box-c {
   width: 100%;
-  height: 100%;
-  overflow: hidden;
+  height: fit-content;
 }
+
 .slider-container {
-  height: 100vh;
-  display: inline-flex;
-  overflow: hidden;
-  transform: translateX(0);
-  transition: transform 0.3s ease-out;
-  cursor: grab;
+  position: relative;
+  height: 650px;
 }
 
 .slide {
-  max-height: 100vh;
-  width: 100vh;
-  user-select: none;
+  position: absolute;
+  height: fit-content;
+  margin: 0 auto;
+  width: 100%;
 }
 
-.grabbing {
-  cursor: grabbing;
+.hideme {
+  display: none;
 }
 
-.grabbing .slide img {
-  transform: scale(0.9);
-  background-color: var(--color-secondary);
+.z-index {
+  z-index: 10;
 }
 
 .slider-click {
@@ -297,6 +298,7 @@ footer .grid-col-3 * {
   display: flex;
   align-items: center;
   justify-content: space-around;
+  z-index: 100;
 }
 .slider-click a {
   width: 100%;
@@ -431,6 +433,7 @@ span:first-of-type {
   box-shadow: inset 0 4px 3px -3px rgb(0 0 0 / 10%),
     inset 0 4px 2px -2px rgb(0 0 0 / 7%);
   transition: all 0.3s;
+  z-index: 10;
 }
 
 .mobile-menu ul a {
@@ -475,6 +478,9 @@ span:first-of-type {
     margin: 20px;
     grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
   }
+  .slider-container {
+    height: 650px;
+  }
 }
 
 @media screen and (max-width: 1100px) {
@@ -505,6 +511,10 @@ span:first-of-type {
   .grid-col-2b,
   .grid-col-3 {
     grid-template-columns: 1fr;
+  }
+
+  .slider-container {
+    height: 900px;
   }
 
   .box-a.grid-col-2 img:first-child {
