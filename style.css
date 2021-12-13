@@ -196,6 +196,24 @@ header {
   margin-top: 1rem;
 }
 
+.box-d.bg-primary {
+  width: 100%;
+  position: relative;
+}
+
+.box-d.bg-primary::before,
+.box-d.bg-primary::after {
+  content: "";
+  position: absolute;
+  height: 200px;
+  bottom: -90px;
+  right: 0;
+  left: 0;
+  z-index: -10;
+  background-color: var(--color-secondary);
+  transform: skewY(-3deg);
+}
+
 .box-c span {
   font-size: 2rem;
 }
@@ -498,6 +516,9 @@ span:first-of-type {
 }
 
 @media screen and (max-width: 760px) {
+  .box-a img {
+    z-index: -10;
+  }
   p {
     font-size: 14px;
   }
