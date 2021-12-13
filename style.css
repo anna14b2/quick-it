@@ -491,6 +491,10 @@ span:first-of-type {
   .slide img {
     max-width: 200px;
   }
+
+  .slider-container {
+    height: 500px;
+  }
 }
 
 @media screen and (max-width: 760px) {
